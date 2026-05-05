@@ -1,0 +1,23 @@
+<robot name="rocket">
+  <link name="base_link">
+
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="267"/>
+      <inertia ixx="50" iyy="50" izz="5" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+
+    <visual>
+      <geometry>
+        <mesh filename="rocket.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <geometry>
+        <mesh filename="rocket.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+
+  </link>
+</robot>
